@@ -10,18 +10,25 @@ namespace SCRUMFuncPrime
             private set;
         }
 
-        protected Account()
+        public SesameCreditAssessmentService Service
         {
+            get;
+            private set;
         }
 
-        public static Account OpenDebitAccount()
+        protected Account(SesameCreditAssessmentService service)
         {
-            return new Account();
+            this.Service = service;
         }
 
-        public static Account OpenAccount()
+        public static Account OpenDebitAccount(SesameCreditAssessmentService service)
         {
-            return new Account();
+            return new Account(service);
+        }
+
+        public static Account OpenAccount(SesameCreditAssessmentService service)
+        {
+            return new Account(service);
         }
 
         public void Deposit(long amount)

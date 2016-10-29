@@ -4,7 +4,7 @@ namespace SCRUMFuncPrimeTests
 {
     public class DibitAccount:Account
     {
-        public  DibitAccount() : base()
+        public  DibitAccount(SesameCreditAssessmentService service) : base(service)
         {
 
         }
@@ -13,7 +13,7 @@ namespace SCRUMFuncPrimeTests
         {
             bool insufficientFunds = this.Balance < amount;
             
-            if ( insufficientFunds)
+            if (insufficientFunds)
             {
                 throw new InsufficientFundsException();
             }

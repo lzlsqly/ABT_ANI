@@ -1,27 +1,20 @@
-﻿using SCRUMFuncPrime;
+﻿using System.Runtime.CompilerServices;
+using SCRUMFuncPrime;
 
 namespace SCRUMFuncPrimeTests
 {
     public class CreditAccount:Account
     {
-        /*
-        private static IAssessmentService service = new SesameCreditAssessmentService();
+        public CreditAccount(SCRUMFuncPrime.SesameCreditAssessmentService service) : base(service)
+        {
 
-        public static IAssessmentService AssessmentService
-        {
-            get { return service; }
         }
-        */
-        public CreditAccount() : base()
-        {
-            
-        }
-        /*
+
         public new void Withdraw(long amount)
         {
-            
+            if (this.Service.GetCredit("") + this.Balance < amount)
+                throw new InsufficientFundsException();
+            base.Withdraw(amount);
         }
-         */
-
     }
 }

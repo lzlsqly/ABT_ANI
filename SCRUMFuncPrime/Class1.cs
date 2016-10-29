@@ -1,8 +1,6 @@
 ﻿using System;
 namespace SCRUMFuncPrime
 {
-    class Class1
-    {
         public interface IAssessmentService
         {
             long GetCredit(String socialSecurityNumber);
@@ -12,7 +10,7 @@ namespace SCRUMFuncPrime
         {
             public long GetCredit(String socialSecurityNumber)
             {
-                int value = (new Random().Next() * 10000);
+                int value = (new Random().Next() * 1000);
                 System.Threading.Thread.Sleep(value);
 
                 if (new Random().Next() > 0.66)
@@ -22,5 +20,4 @@ namespace SCRUMFuncPrime
                 return value;
             }
         }
-    }
 }
