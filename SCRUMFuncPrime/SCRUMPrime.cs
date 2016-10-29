@@ -1,13 +1,9 @@
-﻿using System;
+﻿
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SCRUMFuncPrime
 {
-   public static class SCRUMPrime
+   public static class ScrumPrime
     {
         public static ArrayList PrimeBreak(int n)
         {

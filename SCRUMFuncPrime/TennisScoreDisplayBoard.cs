@@ -1,43 +1,36 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SCRUMFuncPrime
+﻿namespace SCRUMFuncPrime
 {
     public static class TennisScoreDisplayBoard
     {
-        public static string TennisScoreDis(int PlayerA, int PlayerB)
+        public static string TennisScoreDis(int playerA, int playerB)
         {
-            string[] arrA=new string[4] {"Love","Fifteen","Thirty","Fourty"};
-            string[] arrB = new string[4] { "Love", "Fifteen", "Thirty", "Fourty" };
+            var arrA=new string[4] {"Love","Fifteen","Thirty","Fourty"};
+            var arrB = new string[4] { "Love", "Fifteen", "Thirty", "Fourty" };
 
-            if (PlayerA == PlayerB)
+            if (playerA == playerB)
             {
-                if (PlayerA >= 3)
+                if (playerA >= 3)
                     return "Deuce";
-                return arrA[PlayerA] + " ALL";
+                return arrA[playerA] + " ALL";
             }
-            if (PlayerA - PlayerB == 1)
+            if (playerA - playerB == 1)
             {
-                if (PlayerB == 0 && PlayerA == 4)
+                if (playerB == 0 && playerA == 4)
                 {
                     return "A Win";
                 }
-                else if(PlayerB > 0 && PlayerA >= 4)
+                else if(playerB > 0 && playerA >= 4)
                 {
                     return "A Advantage";
                 }
             }
-            if (PlayerA - PlayerB > 1)
+            if (playerA - playerB > 1)
             {
-                if (PlayerA >= 4)
+                if (playerA >= 4)
                     return "A Win";
             }
 
-            return arrA[PlayerA] + " " + arrB[PlayerB]; ;
+            return arrA[playerA] + " " + arrB[playerB]; ;
         }
     }
 }

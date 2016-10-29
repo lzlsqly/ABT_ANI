@@ -1,12 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SCRUMFuncPrime;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SCRUMFuncPrime.Tests
+namespace SCRUMFuncPrimeTests
 {
     [TestClass()]
     public class TennisScoreDisplayBoardTests
