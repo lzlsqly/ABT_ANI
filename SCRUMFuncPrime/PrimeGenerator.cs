@@ -8,6 +8,7 @@ namespace SCRUMFuncPrime
         {
             if (maxValue < 2)
                 return new int[0];
+            maxValue++;
             var isprime = new bool[maxValue];
 
             SetmaxValueArray(maxValue, isprime);
