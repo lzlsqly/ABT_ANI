@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SCRUMFuncPrime
 {
@@ -18,7 +14,7 @@ namespace SCRUMFuncPrime
 
             SievePrime(maxValue, isprime);
 
-            return Primes(maxValue, isprime); ;
+            return Primes(maxValue, isprime);
         }
 
         private static void SievePrime(int maxValue, bool[] isprime)
