@@ -39,8 +39,5 @@ namespace SCRUMFuncPrime
 
             return arrA[PlayerA] + " " + arrB[PlayerB]; ;
         }
-
-
-
     }
 }
