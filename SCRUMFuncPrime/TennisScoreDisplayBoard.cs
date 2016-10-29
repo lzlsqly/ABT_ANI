@@ -4,8 +4,8 @@
     {
         public static string TennisScoreDis(int playerA, int playerB)
         {
-            var arrA=new string[4] {"Love","Fifteen","Thirty","Fourty"};
-            var arrB = new string[4] { "Love", "Fifteen", "Thirty", "Fourty" };
+            var arrA=new string[] {"Love","Fifteen","Thirty","Fourty"};
+            var arrB = new string[] { "Love", "Fifteen", "Thirty", "Fourty" };
 
             if (playerA == playerB)
             {
