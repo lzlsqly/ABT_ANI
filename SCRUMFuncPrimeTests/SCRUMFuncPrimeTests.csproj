@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="PrimeGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCRUMPrimeTests.cs" />
     <Compile Include="TennisScoreDisplayBoardTests.cs" />
